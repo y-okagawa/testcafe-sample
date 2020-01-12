@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "testcafe": "./node_modules/.bin/testcafe"
+  },
+  "dependencies": {
+    "testcafe": "^1.7.1"
+  }
+}
