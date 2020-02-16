@@ -1,0 +1,8 @@
+version: "3"
+services:
+  testcafe:
+    image: testcafe/testcafe
+    volumes:
+    - ./tests:/tests:delegate
+    - ./screenshots:/screenshots:delegate
+    command: chromium /tests/* --no-sandbox --screenshots /screenshots
