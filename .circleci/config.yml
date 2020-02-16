@@ -20,6 +20,5 @@ jobs:
           name: run testcafe
           command: |
             docker-compose run --rm testcafe
-      - run:
-          name: save screenshots
+      - store_artifacts:
           path: ./screenshots
