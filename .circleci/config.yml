@@ -20,5 +20,10 @@ jobs:
           name: run testcafe
           command: |
             docker-compose run --rm testcafe
+      - run:
+          name: create screenshots directory
+          command: |
+            mkdir ./screenshots
+            chmod 777 screenshots
       - store_artifacts:
           path: ./screenshots
