@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "testcafe": "./node_modules/.bin/testcafe"
+    "testcafe": "./node_modules/.bin/testcafe chrome ./tests/* --screenshots ./screenshots"
   },
   "dependencies": {
     "testcafe": "^1.7.1"
