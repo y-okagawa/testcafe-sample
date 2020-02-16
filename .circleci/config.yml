@@ -13,6 +13,10 @@ jobs:
             chmod +x ~/docker-compose
             sudo mv ~/docker-compose /usr/local/bin/docker-compose
       - run:
-          name: docker-compose up
+          name: docker-compose build
           command: |
-            docker-compose up --build -d
+            docker-compose build
+      - run:
+          name: run testcafe
+          command: |
+            docker-compose run --rm testcafe
